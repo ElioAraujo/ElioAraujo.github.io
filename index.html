@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Élio Hermínio Confiança | Analista de Dados & SIS — Moçambique</title>
+<meta name="description" content="Portfólio profissional de Élio Hermínio Confiança — Analista de Dados, Estatístico e Especialista em Sistemas de Informação em Saúde. MISAU, Moçambique.">
+<meta name="author" content="Élio Hermínio Confiança">
+<meta property="og:title" content="Élio Hermínio Confiança — Analista de Dados & SIS">
+<meta property="og:description" content="Técnico do MISAU especializado em vigilância epidemiológica, Power BI, DHIS2 e desenvolvimento de plataformas de saúde pública em Moçambique.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a3d2e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230a3d2e'/><text y='78' x='14' font-size='72' font-family='Georgia' fill='white'>E</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#040d08;
+  --bg2:#081410;
+  --bg3:#0d1f17;
+  --card:#0f2018;
+  --border:rgba(255,255,255,0.07);
+  --border2:rgba(255,255,255,0.12);
+  --green:#16a872;
+  --green2:#0d7a52;
+  --green3:#0a5c3d;
+  --green-glow:rgba(22,168,114,0.15);
+  --navy:#0e2a4a;
+  --gold:#c9933a;
+  --gold2:#f0b855;
+  --text:#e8f0ec;
+  --text2:#8aab98;
+  --text3:#4d7060;
+  --white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6;text-align:justify}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--green3);border-radius:4px}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:60px;background:rgba(4,13,8,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);text-align:left}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--green);letter-spacing:0.5px}
+.nav-links{display:flex;gap:0.25rem}
+.nav-links a{padding:6px 14px;font-size:13px;color:var(--text2);text-decoration:none;border-radius:6px;transition:all .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--green);background:var(--green-glow)}
+.nav-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:blink 2.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(13,122,82,0.18) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 10% 80%,rgba(14,42,74,0.25) 0%,transparent 60%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(22,168,114,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(22,168,114,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 20%,transparent 75%)}
+.hero-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;text-align:left}
+.hero-eyebrow span{font-size:12px;color:var(--green);letter-spacing:2px;text-transform:uppercase}
+.hero-eyebrow hr{flex:1;border:none;border-top:1px solid var(--green3)}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.5vw,4.5rem);line-height:1.08;color:var(--white);margin-bottom:1rem;font-weight:700;text-align:left}
+h1 em{color:var(--green);font-style:italic}
+.hero-role{font-size:1.05rem;color:var(--text2);margin-bottom:1.75rem;font-weight:300;letter-spacing:0.2px;text-align:left}
+.hero-bio{font-size:0.95rem;color:var(--text2);line-height:1.8;margin-bottom:2rem;max-width:520px}
+.hero-bio strong{color:var(--text);font-weight:500}
+.contact-chips{display:flex;flex-direction:column;gap:8px;margin-bottom:2.5rem}
+.chip{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2)}
+.chip-icon{width:32px;height:32px;background:var(--card);border:1px solid var(--border2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-g{background:var(--green2);color:#fff;padding:11px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;transition:background .2s,transform .15s;display:inline-flex;align-items:center;gap:8px}
+.btn-g:hover{background:var(--green);transform:translateY(-2px)}
+.btn-o{border:1px solid var(--border2);color:var(--text2);padding:11px 24px;border-radius:8px;font-size:14px;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-o:hover{border-color:var(--green);color:var(--green)}
+
+/* stats panel */
+.stats-panel{background:var(--card);border:1px solid var(--border2);border-radius:20px;padding:2rem;position:relative;overflow:hidden}
+.stats-panel::before{content:'';position:absolute;top:-1px;left:20%;right:20%;height:2px;background:linear-gradient(90deg,transparent,var(--green),transparent)}
+.panel-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:1.5rem;text-align:left}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem}
+.stat{text-align:center}
+.stat-n{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--white);line-height:1}
+.stat-l{font-size:11px;color:var(--text3);margin-top:4px;line-height:1.4}
+.divhr{height:1px;background:var(--border);margin:1.25rem 0}
+.tech-chips{display:flex;flex-wrap:wrap;gap:5px}
+.tc{background:rgba(22,168,114,0.1);border:1px solid rgba(22,168,114,0.2);color:rgba(22,168,114,0.9);font-size:11px;padding:3px 9px;border-radius:100px}
+
+/* ── SECTIONS WRAPPER ── */
+.section{padding:6rem 0}
+.section.alt{background:var(--bg2)}
+.inner{max-width:1100px;margin:0 auto;padding:0 2rem}
+.sec-eyebrow{font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:2px;margin-bottom:.5rem;text-align:left}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);color:var(--white);margin-bottom:3rem;line-height:1.2;text-align:left}
+
+/* ── SOBRE MIM ── */
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.sobre-text p{font-size:0.97rem;color:var(--text2);line-height:1.85;margin-bottom:1rem}
+.sobre-text p strong{color:var(--text);font-weight:500}
+.sobre-text p:last-child{margin-bottom:0}
+.sobre-values{display:flex;flex-direction:column;gap:12px}
+.value-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem 1.25rem;display:flex;align-items:flex-start;gap:12px;transition:border-color .2s}
+.value-card:hover{border-color:var(--green3)}
+.value-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.value-title{font-size:14px;font-weight:500;color:var(--white);margin-bottom:3px}
+.value-desc{font-size:12.5px;color:var(--text2);line-height:1.5}
+
+/* ── EXPERIÊNCIA ── */
+.exp-timeline{display:flex;flex-direction:column;gap:0}
+.exp-item{display:grid;grid-template-columns:200px 1fr;gap:0;position:relative}
+.exp-item::before{content:'';position:absolute;left:186px;top:28px;bottom:-1px;width:1px;background:var(--border)}
+.exp-item:last-child::before{display:none}
+.exp-meta{padding:1.75rem 2rem 1.75rem 0;text-align:right}
+.exp-period{font-size:12px;color:var(--green);font-weight:500;margin-bottom:5px}
+.exp-org{font-size:12px;color:var(--text3);line-height:1.5}
+.exp-dot{position:absolute;left:182px;top:28px;width:9px;height:9px;border-radius:50%;background:var(--green);border:2px solid var(--bg);z-index:1}
+.exp-content{padding:1.75rem 0 1.75rem 2.5rem;border-left:none}
+.exp-role{font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:4px}
+.exp-subtitle{font-size:13px;color:var(--green);margin-bottom:10px;font-style:italic}
+.exp-desc{font-size:13.5px;color:var(--text2);line-height:1.7;margin-bottom:12px}
+.exp-ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.exp-ul li{font-size:13px;color:var(--text2);padding-left:18px;position:relative;line-height:1.55}
+.exp-ul li::before{content:'→';position:absolute;left:0;color:var(--green2);font-size:11px;top:1px}
+
+/* ── PROJECTOS ── */
+.proj-featured{background:var(--card);border:1px solid var(--border2);border-radius:20px;padding:2.5rem;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.proj-featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green2),var(--navy),var(--green2))}
+.proj-featured-inner{display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.proj-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(22,168,114,0.1);border:1px solid rgba(22,168,114,0.25);color:var(--green);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:100px;margin-bottom:12px}
+.proj-badge .dot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
+.proj-name{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--white);margin-bottom:10px;line-height:1.2}
+.proj-desc{font-size:13.5px;color:var(--text2);line-height:1.75;margin-bottom:1.25rem}
+.proj-features{display:flex;flex-direction:column;gap:8px;margin-bottom:1.25rem}
+.pf{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text2);line-height:1.5}
+.pf-dot{width:6px;height:6px;border-radius:50%;background:var(--green2);flex-shrink:0;margin-top:5px}
+.pf strong{color:var(--text);font-weight:500}
+.proj-tags{display:flex;flex-wrap:wrap;gap:6px;text-align:left}
+.ptag{background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--text2);font-size:11px;padding:3px 10px;border-radius:6px}
+.modules-box{background:rgba(22,168,114,0.05);border:1px solid rgba(22,168,114,0.12);border-radius:14px;padding:1.5rem}
+.mb-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);margin-bottom:1rem}
+.module-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mod{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text2)}
+.mod-dot{width:6px;height:6px;border-radius:50%;background:var(--green2);flex-shrink:0}
+.mod-dot.gold{background:var(--gold)}
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.proj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.75rem;transition:border-color .25s,transform .2s}
+.proj-card:hover{border-color:var(--green3);transform:translateY(-3px)}
+.proj-card-icon{width:44px;height:44px;background:rgba(22,168,114,0.1);border:1px solid rgba(22,168,114,0.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:1rem}
+.proj-card-name{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:6px}
+.proj-card-org{font-size:12px;color:var(--green);margin-bottom:10px}
+.proj-card-desc{font-size:13px;color:var(--text2);line-height:1.65;margin-bottom:12px}
+
+/* ── COMPETÊNCIAS ── */
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:3rem}
+.skill-block{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.75rem}
+.sb-header{display:flex;align-items:center;gap:12px;margin-bottom:1rem}
+.sb-icon{font-size:22px}
+.sb-title{font-size:15px;font-weight:600;color:var(--white)}
+.sb-sub{font-size:12px;color:var(--text3);margin-top:1px}
+.skill-tags{display:flex;flex-wrap:wrap;gap:7px;text-align:left}
+.stag{background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--text2);font-size:12px;padding:5px 12px;border-radius:8px;transition:all .2s;cursor:default}
+.stag:hover,.stag.hl{background:rgba(22,168,114,0.1);color:rgba(22,168,114,0.9);border-color:rgba(22,168,114,0.25)}
+
+/* languages */
+.lang-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.lang-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.25rem;text-align:center}
+.lang-name{font-size:14px;font-weight:500;color:var(--white);margin-bottom:3px}
+.lang-level{font-size:11px;color:var(--text3);margin-bottom:10px}
+.lang-dots{display:flex;justify-content:center;gap:4px}
+.ld{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.1)}
+.ld.on{background:var(--green)}
+
+/* ── EDUCAÇÃO ── */
+.edu-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:16px;overflow:hidden}
+.edu-item{background:var(--card);padding:1.5rem 2rem;display:flex;align-items:flex-start;gap:1.25rem;transition:background .2s}
+.edu-item:hover{background:var(--bg3)}
+.edu-icon{width:44px;height:44px;background:rgba(22,168,114,0.1);border:1px solid rgba(22,168,114,0.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.edu-year{font-size:12px;color:var(--green);font-weight:500;margin-bottom:3px}
+.edu-degree{font-size:15px;font-weight:500;color:var(--white);margin-bottom:3px}
+.edu-inst{font-size:13px;color:var(--green);margin-bottom:4px}
+.edu-detail{font-size:12.5px;color:var(--text2);line-height:1.5}
+
+/* ── VOLUNTARIADO ── */
+.vol-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.vol-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;align-items:flex-start;gap:14px}
+.vol-icon{font-size:24px;flex-shrink:0}
+.vol-name{font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px}
+.vol-desc{font-size:13px;color:var(--text2);line-height:1.55}
+
+/* ── REFERÊNCIAS ── */
+.ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.ref-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem}
+.ref-avatar{width:52px;height:52px;border-radius:50%;background:rgba(22,168,114,0.12);border:2px solid rgba(22,168,114,0.25);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;color:var(--green);margin-bottom:1rem}
+.ref-name{font-size:15px;font-weight:600;color:var(--white);margin-bottom:3px}
+.ref-role{font-size:12.5px;color:var(--green);margin-bottom:.75rem;line-height:1.5}
+.ref-org{font-size:12px;color:var(--text3);margin-bottom:1rem}
+.ref-contact{font-size:12.5px;color:var(--text2);line-height:1.9}
+
+/* ── FOOTER ── */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center}
+.footer-name{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--green);margin-bottom:.5rem}
+.footer-sub{font-size:13px;color:var(--text3)}
+
+/* ── FADE IN ── */
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .hero-inner,.sobre-grid,.proj-featured-inner{grid-template-columns:1fr}
+  .stats-panel,.sobre-values{display:block}
+  .stats-grid{display:grid}
+  nav .nav-links{display:none}
+  .exp-item{grid-template-columns:1fr}
+  .exp-item::before,.exp-dot{display:none}
+  .exp-meta{text-align:left;padding:1.5rem 0 .25rem}
+  .exp-content{padding:0 0 1.5rem}
+  .proj-grid,.skills-layout,.lang-row,.ref-grid,.vol-grid{grid-template-columns:1fr}
+  .modules-box{margin-top:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Élio H. Confiança</div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="nav-links">
+      <a href="#sobre" class="active">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projectos">Projectos</a>
+      <a href="#competencias">Competências</a>
+      <a href="#educacao">Educação</a>
+      <a href="#referencias">Referências</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--green)">
+      <div class="nav-dot"></div> Disponível
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">
+        <span>Analista de Dados · MISAU · Maputo, Moçambique</span>
+        <hr>
+      </div>
+      <h1>Élio Hermínio<br><em>Confiança</em></h1>
+      <p class="hero-role">Estatístico & Especialista em Sistemas de Informação em Saúde</p>
+      <p class="hero-bio">
+        Técnico do <strong>Ministério da Saúde de Moçambique (MISAU)</strong>, licenciado em Estatística pela <strong>Universidade Eduardo Mondlane</strong>. Especializado em vigilância epidemiológica, análise de dados de saúde pública, modelagem de equações estruturais (PLS-SEM com SmartPLS 4) e desenvolvimento de plataformas digitais para apoio à decisão clínica e administrativa. Actualmente integrado no Projecto de Vigilância Colaborativa em Saúde, financiado pela <strong>Resolve to Save Lives</strong> e implementado pela <strong>CHAI em Moçambique</strong>, onde utiliza principalmente <strong>R, R Shiny e Power BI</strong> para análise e visualização de dados epidemiológicos.
+      </p>
+      <div class="contact-chips">
+        <div class="chip"><div class="chip-icon">📍</div>Cidade de Maputo, Bairro Ferroviário, Rua 4310, Q80 Casa Nº 21</div>
+        <div class="chip"><div class="chip-icon">📞</div>(+258) 848 024 585 / 871 782 806</div>
+        <div class="chip"><div class="chip-icon">✉️</div>elioherminioaraujof@gmail.com</div>
+        <div class="chip"><div class="chip-icon">🐙</div>github.com/ElioAraujo</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="mailto:elioherminioaraujof@gmail.com" class="btn-g">✉ Contactar</a>
+        <a href="#projectos" class="btn-o">↓ Ver projectos</a>
+        <a href="https://github.com/ElioAraujo" target="_blank" class="btn-o">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="stats-panel">
+      <div class="panel-label">Impacto profissional</div>
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-n">9</div><div class="stat-l">Províncias cobertas em AQD</div></div>
+        <div class="stat"><div class="stat-n">27</div><div class="stat-l">Distritos supervisionados</div></div>
+        <div class="stat"><div class="stat-n">4+</div><div class="stat-l">Anos no MISAU</div></div>
+        <div class="stat"><div class="stat-n">8</div><div class="stat-l">Módulos no Portal</div></div>
+      </div>
+      <div class="divhr"></div>
+      <div class="panel-label" style="margin-bottom:.75rem">Ferramentas principais</div>
+      <div class="tech-chips">
+        <span class="tc">R / R Shiny</span><span class="tc">SmartPLS</span><span class="tc">Power BI</span><span class="tc">DHIS2</span>
+        <span class="tc">SIS-H</span><span class="tc">SQL</span><span class="tc">SPSS</span>
+        <span class="tc">Stata</span><span class="tc">PHP</span><span class="tc">JavaScript</span><span class="tc">Leaflet.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MIM -->
+<section class="section alt" id="sobre">
+  <div class="inner">
+    <div class="sec-title">Sobre mim</div>
+    <div class="sobre-grid fade-in">
+      <div class="sobre-text">
+        <p>Sou <strong>Élio Hermínio Confiança</strong>, natural de Moçambique e técnico do <strong>Ministério da Saúde (MISAU)</strong>. A minha paixão é transformar dados em informação útil para salvar vidas — especialmente no contexto da saúde pública africana, onde a qualidade dos dados pode fazer a diferença entre uma resposta eficaz e uma crise sem controlo.</p>
+        <p>Tenho <strong>Licenciatura em Estatística</strong> pela Universidade Eduardo Mondlane (UEM), em Maputo. Durante a minha formação, desenvolvi competências sólidas em bioestatística, análise multivariada, séries temporais e sistemas de informação em saúde — base que aplico diariamente no meu trabalho.</p>
+        <p>Ao longo da minha carreira no MISAU, coordenei <strong>Avaliações de Qualidade de Dados (AQD)</strong> em 9 províncias e 27 distritos nacionais, trabalhei como supervisor distrital em três regiões distintas, desenvolvi dashboards de vigilância da cólera e automatizei ferramentas de geração de boletins mensais. Actuei também no <strong>Programa Nacional de Combate à ITS-HIV/SIDA</strong>, capacitando profissionais de saúde sobre hepatites B e C.</p>
+        <p>Actualmente integro o <strong>Projecto de Vigilância Colaborativa em Saúde</strong>, financiado pela <em>Resolve to Save Lives</em> e implementado pela CHAI em Moçambique, onde desenvolvo soluções técnicas para o Departamento de Informação em Saúde (DIS). Em paralelo, estou a construir o <strong>Portal Nacional de Vigilância em Saúde Pública</strong> — uma plataforma web com 8 módulos epidemiológicos para detecção precoce de surtos e apoio à tomada de decisão a nível nacional.</p>
+
+      </div>
+      <div class="sobre-values">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <div>
+            <div class="value-title">Orientado a resultados</div>
+            <div class="value-desc">Foco em soluções práticas que produzem impacto real nos sistemas de saúde pública de Moçambique.</div>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📊</div>
+          <div>
+            <div class="value-title">Dados como missão</div>
+            <div class="value-desc">Convicto de que dados de qualidade são a base de uma resposta de saúde pública eficaz e equitativa.</div>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <div>
+            <div class="value-title">Trabalho em equipa</div>
+            <div class="value-desc">Experiência em colaboração com equipas técnicas e clínicas, parceiros internacionais e comunidades locais.</div>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📚</div>
+          <div>
+            <div class="value-title">Aprendizagem contínua</div>
+            <div class="value-desc">Sempre actualizado sobre novas ferramentas, linguagens de programação e boas práticas de análise de dados.</div>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <div>
+            <div class="value-title">Inovação aplicada</div>
+            <div class="value-desc">Desenvolvimento de soluções tecnológicas adaptadas ao contexto moçambicano, com recursos disponíveis localmente.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section class="section" id="experiencia">
+  <div class="inner">
+    <div class="sec-eyebrow">Trajectória</div>
+    <div class="sec-title">Experiência profissional</div>
+    <div class="exp-timeline fade-in">
+
+      <!-- CHAI/RSL -->
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Fev 2026 – Ago 2026</div>
+          <div class="exp-org">MISAU · DPC-DIS<br>Resolve to Save Lives / CHAI</div>
+        </div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-role">Técnico de TI & Analista de Dados</div>
+          <div class="exp-subtitle">Projecto de Vigilância Colaborativa em Saúde — financiado pela Resolve to Save Lives, implementado pela CHAI em Moçambique</div>
+          <div class="exp-desc">Integrado como técnico do MISAU no Projecto de Vigilância Colaborativa em Saúde, apoiando o Departamento de Informação em Saúde (DIS) sob gestão do Dr. Edson Francisco. Para as análises epidemiológicas, utiliza principalmente <strong>R, R Shiny e Power BI</strong>. O projecto visa fortalecer os mecanismos de detecção precoce, resposta rápida e partilha de dados entre diferentes sectores e instituições.</div>
+          <ul class="exp-ul">
+            <li>Implementação de novas funcionalidades de software e arquitecturas de interoperabilidade entre sistemas nacionais de informação em saúde</li>
+            <li>Concepção e gestão de bases de dados relacionais e servidores de aplicações do SIS</li>
+            <li>Colaboração com a equipa de desenvolvimento na definição de arquitectura dos sistemas e normas de programação</li>
+            <li>Formação e apoio técnico a utilizadores do SIS a nível provincial e hospitalar</li>
+            <li>Monitorização do desempenho do SIS para vigilância epidemiológica colaborativa</li>
+            <li>Elaboração de planos de teste, validação e correcção de dados; identificação de causas raiz de falhas</li>
+            <li>Documentação de procedimentos técnicos e elaboração de relatórios periódicos de actividades</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Banco Mundial SIS-H -->
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Abr 2024 – Jan 2026</div>
+          <div class="exp-org">MISAU · SIS-H<br>Financiado pelo Banco Mundial</div>
+        </div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-role">Analista de Dados — Estágio Remunerado (SIS-H)</div>
+          <div class="exp-subtitle">Sistema de Informação de Saúde para Gestão Hospitalar — Banco Mundial / MISAU</div>
+          <div class="exp-desc">Estágio remunerado integrado no projecto de digitalização hospitalar do MISAU, financiado pelo Banco Mundial. O SIS-H é o sistema nacional de código aberto para gestão hospitalar, cobrindo módulos de triagem, registo electrónico de pacientes, exames laboratoriais, gestão de medicamentos, altas hospitalares e relatórios periódicos. Neste contexto, actuou como analista de dados responsável pelo desenvolvimento de relatórios dinâmicos para apoio à gestão e decisão clínica e administrativa hospitalar.</div>
+          <ul class="exp-ul">
+            <li>Desenvolvimento de relatórios dinâmicos hospitalares para monitorização de internamentos, altas, óbitos, triagem e indicadores clínicos em tempo real</li>
+            <li>Criação de dashboards interactivos para apoio à gestão hospitalar e administrativa, integrando dados do SIS-H com indicadores do MISAU</li>
+            <li>Programação de interfaces web para visualização e consulta de dados hospitalares utilizando PHP, HTML, JavaScript e SQL</li>
+            <li>Extracção, transformação e carregamento (ETL) de dados entre módulos do SIS-H e bases de dados relacionais</li>
+            <li>Apoio técnico a utilizadores do SIS-H em unidades hospitalares, garantindo a qualidade e integridade dos dados registados</li>
+            <li>Contribuição para a integração do SIS-H com outros sistemas nacionais de informação em saúde (DHIS2, SIS-MA)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Supervisor AQD -->
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Jun 2023 – Mar 2024</div>
+          <div class="exp-org">MISAU<br>Programa Nacional ITS-HIV/SIDA · Monitoria & Avaliação</div>
+        </div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-role">Estagiário — Supervisor de Avaliação de Qualidade de Dados</div>
+          <div class="exp-subtitle">Programa Nacional de Combate à ITS-HIV/SIDA — Área de Monitoria e Avaliação</div>
+          <div class="exp-desc">Coordenação e execução de AQD (Avaliações de Qualidade de Dados) em escala nacional, supervisionando todos os níveis do Sistema de Informação em Saúde relacionados com a resposta ao HIV.</div>
+          <ul class="exp-ul">
+            <li>Coordenação de AQD em <strong>9 províncias e 27 distritos nacionais</strong> — serviços de prevenção, cuidados e tratamento do HIV</li>
+            <li>Supervisão de ITS em 3 províncias; capacitação de profissionais de saúde sobre hepatites B e C</li>
+            <li>Supervisor distrital em três regiões distintas, com foco na análise e qualidade da informação</li>
+            <li>Criação de dashboards de vigilância da cólera com actualização automática via DHIS2</li>
+            <li>Automatização de ferramentas DHIS para geração de boletins mensais na DPC</li>
+            <li>Transferência de capacidades AQD para técnicos da DPS/SPS; elaboração de recomendações estratégicas para melhoria dos dados</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Estagiário -->
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">Fev 2023 – Mai 2023</div>
+          <div class="exp-org">MISAU<br>DPC / DIS</div>
+        </div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-role">Estagiário — Analista de Dados</div>
+          <div class="exp-subtitle">MISAU — Direcção de Planificação e Cooperação / DIS</div>
+          <div class="exp-desc">Estágio na Direcção de Planificação e Cooperação (DPC/DIS) do MISAU, com foco na produção de informação estatística nacional e digitalização de instrumentos de qualidade de dados.</div>
+          <ul class="exp-ul">
+            <li>Apoio à criação de boletins mensais de saúde da DPC/DIS</li>
+            <li>Contribuição para a elaboração do anuário estatístico nacional do MISAU</li>
+            <li>Digitalização de fichas de Avaliação de Qualidade de Dados (AQD) Nacional no SIS-MA</li>
+            <li>Apoio à consolidação e validação de dados estatísticos para publicações oficiais do MISAU</li>
+          </ul>
+        </div>
+      </div>
+      <!-- CSK -->
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-period">2022</div>
+          <div class="exp-org">CSK Consultoria<br>Maputo</div>
+        </div>
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-role">Consultor e Pesquisador Independente</div>
+          <div class="exp-subtitle">Consultoria em programas e projectos de desenvolvimento</div>
+          <div class="exp-desc">Prestação de serviços de consultoria estatística e análise de dados para organizações de desenvolvimento, instituições de saúde e parceiros internacionais.</div>
+          <ul class="exp-ul">
+            <li>Análise estatística avançada: inferência, regressão, séries temporais, análise multivariada e bioestatística</li>
+            <li>Desenvolvimento de dashboards e visualizações interactivas com Power BI e Tableau</li>
+            <li>Soluções de dados com DHIS2, SIS-H e SQL para organizações de saúde</li>
+            <li>Capacitação em estatística aplicada e monitoria de indicadores</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTOS -->
+<section class="section alt" id="projectos">
+  <div class="inner">
+    <div class="sec-eyebrow">Trabalho seleccionado</div>
+    <div class="sec-title">Projectos em destaque</div>
+
+    <!-- PORTAL FEATURED -->
+    <div class="proj-featured fade-in">
+      <div class="proj-featured-inner">
+        <div>
+          <div class="proj-badge"><div class="dot"></div> Projecto principal · Protótipo operacional · 2025–2026</div>
+          <div class="proj-name">Portal Nacional de Vigilância<br>em Saúde Pública — MISAU</div>
+          <p class="proj-desc">Plataforma web integrada desenvolvida no âmbito do Projecto de Vigilância Colaborativa em Saúde (Resolve to Save Lives / CHAI). Concebida para monitorização epidemiológica nacional em tempo real, detecção precoce de surtos, análise de indicadores prioritários e apoio à tomada de decisão a nível nacional, provincial e distrital.</p>
+          <p class="proj-desc">A plataforma integra dados do DHIS2 e de outras fontes do SIS, com arquitectura modular desenhada para expansão progressiva. Próximos passos: integração directa com PostgreSQL e Apache Doris para leitura analítica em tempo real.</p>
+          <div class="proj-features">
+            <div class="pf"><div class="pf-dot"></div><div><strong>8 módulos de vigilância independentes</strong> — cada um com Visão Geral, Epidemiologia, Geoespacial, Resposta Operacional, Previsão e Alertas, Qualidade dos Dados e Relatórios</div></div>
+            <div class="pf"><div class="pf-dot"></div><div><strong>Mapas interactivos Leaflet / OpenStreetMap</strong> com calor por distrito, filtros dinâmicos por província, distrito e período</div></div>
+            <div class="pf"><div class="pf-dot"></div><div><strong>Sistema de alertas em tempo real</strong> — previsão de risco epidémico por nível (baixo, moderado, alto, crítico)</div></div>
+            <div class="pf"><div class="pf-dot"></div><div><strong>Monitorização da qualidade dos dados</strong> — completude, consistência, atraso médio e duplicados por unidade sanitária</div></div>
+            <div class="pf"><div class="pf-dot"></div><div><strong>Integração progressiva</strong> com DHIS2 API, PostgreSQL e Apache Doris para leitura directa analítica</div></div>
+          </div>
+          <div class="proj-tags">
+            <span class="ptag">R Shiny</span><span class="ptag">JavaScript</span><span class="ptag">PHP</span><span class="ptag">Leaflet.js</span>
+            <span class="ptag">DHIS2 API</span><span class="ptag">SQL</span><span class="ptag">PostgreSQL</span>
+            <span class="ptag">Power BI</span><span class="ptag">OpenStreetMap</span>
+          </div>
+        </div>
+        <div class="modules-box">
+          <div class="mb-title">Módulos implementados</div>
+          <div class="module-grid">
+            <div class="mod"><div class="mod-dot gold"></div>Cólera <span style="font-size:10px;color:var(--gold);margin-left:4px">Prioritário</span></div>
+            <div class="mod"><div class="mod-dot"></div>Malária</div>
+            <div class="mod"><div class="mod-dot gold"></div>Sarampo <span style="font-size:10px;color:var(--gold);margin-left:4px">Novo</span></div>
+            <div class="mod"><div class="mod-dot"></div>Laboratório</div>
+            <div class="mod"><div class="mod-dot"></div>PFA</div>
+            <div class="mod"><div class="mod-dot"></div>Mordedura</div>
+            <div class="mod"><div class="mod-dot"></div>Meningite</div>
+            <div class="mod"><div class="mod-dot"></div>Tétano Neonatal</div>
+          </div>
+          <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border)">
+            <div class="mb-title">Funcionalidades por módulo</div>
+            <div style="display:flex;flex-direction:column;gap:7px;margin-top:8px">
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Visão Geral com KPIs e alertas activos</div>
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Epidemiologia — tendências e semana epidemiológica</div>
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Geoespacial — mapa de calor por distrito</div>
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Resposta Operacional — indicadores de resposta</div>
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Previsão e Alertas — risco por nível</div>
+              <div class="pf" style="font-size:12px"><div class="pf-dot"></div>Qualidade dos Dados e Relatórios automáticos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTHER PROJECTS -->
+    <div class="proj-grid fade-in">
+
+      <div class="proj-card">
+        <div class="proj-card-icon">📊</div>
+        <div class="proj-card-name">Sistema de Vigilância da Cólera — Power BI</div>
+        <div class="proj-card-org">Direcção Nacional de Saúde Pública · MISAU · 2023–2026</div>
+        <p class="proj-card-desc">Dashboard oficial da DNSP para monitorização nacional da cólera. Gera automaticamente o Boletim Diário oficial com dados das últimas 24h e cumulativos. Dados reais censurados por confidencialidade institucional.</p>
+        <ul class="exp-ul" style="margin-bottom:12px">
+          <li>Boletim diário automático com dados das últimas 24h e cumulativos desde 2025</li>
+          <li>Mapa coroplético nacional por distrito com escala dinâmica de intensidade</li>
+          <li>Pirâmide etária por sexo e taxa de letalidade por unidade sanitária</li>
+          <li>Tendência por semana epidemiológica — comparativo 2024, 2025 e 2026</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="ptag">Power BI</span><span class="ptag">DAX</span><span class="ptag">DHIS2</span><span class="ptag">SIS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPETÊNCIAS -->
+<section class="section" id="competencias">
+  <div class="inner">
+    <div class="sec-eyebrow">Ferramentas & Capacidades</div>
+    <div class="sec-title">Competências técnicas</div>
+    <div class="skills-layout fade-in">
+
+      <div class="skill-block">
+        <div class="sb-header">
+          <div class="sb-icon">📊</div>
+          <div>
+            <div class="sb-title">Análise Estatística</div>
+            <div class="sb-sub">Inferência, regressão, séries temporais, bioestatística</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="stag hl">SPSS</span>
+          <span class="stag hl">RStudio / R</span>
+          <span class="stag hl">Stata</span>
+          <span class="stag">Python (básico)</span>
+          <span class="stag">Análise Multivariada</span>
+          <span class="stag">Séries Temporais</span>
+          <span class="stag hl">SmartPLS 4</span>
+          <span class="stag hl">Modelagem de Equações Estruturais (PLS-SEM)</span>
+          <span class="stag">Modelagem Preditiva</span>
+          <span class="stag">Amostragem</span>
+          <span class="stag">Bioestatística</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="sb-header">
+          <div class="sb-icon">📈</div>
+          <div>
+            <div class="sb-title">Visualização & Business Intelligence</div>
+            <div class="sb-sub">Dashboards, relatórios automáticos, análises preditivas</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="stag hl">R Shiny</span>
+          <span class="stag hl">Power BI</span>
+          <span class="stag hl">Tableau</span>
+          <span class="stag hl">Excel Avançado</span>
+          <span class="stag">DAX</span>
+          <span class="stag">Automação de Relatórios</span>
+          <span class="stag">Análises Preditivas</span>
+          <span class="stag">Criação de Dashboards</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="sb-header">
+          <div class="sb-icon">🏥</div>
+          <div>
+            <div class="sb-title">Sistemas de Informação em Saúde</div>
+            <div class="sb-sub">Plataformas nacionais e hospitalares do MISAU</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="stag hl">DHIS2</span>
+          <span class="stag hl">SIS-H</span>
+          <span class="stag hl">SIS-MA</span>
+          <span class="stag">Vigilância Epidemiológica</span>
+          <span class="stag">AQD / M&A</span>
+          <span class="stag">Qualidade de Dados</span>
+          <span class="stag">Monitoria de Indicadores</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="sb-header">
+          <div class="sb-icon">🔬</div>
+          <div>
+            <div class="sb-title">Modelagem Avançada</div>
+            <div class="sb-sub">Equações estruturais, modelos preditivos, machine learning aplicado</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="stag hl">SmartPLS 4</span>
+          <span class="stag hl">PLS-SEM</span>
+          <span class="stag hl">Modelagem Preditiva</span>
+          <span class="stag">Modelos de Medida</span>
+          <span class="stag">Modelos Estruturais</span>
+          <span class="stag">Análise de Trajectórias</span>
+          <span class="stag">Bootstrapping</span>
+          <span class="stag">Validade Convergente / Discriminante</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="sb-header">
+          <div class="sb-icon">💻</div>
+          <div>
+            <div class="sb-title">Programação & Bases de Dados</div>
+            <div class="sb-sub">Desenvolvimento web, dados relacionais, APIs</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="stag hl">SQL / MySQL</span>
+          <span class="stag hl">PHP</span>
+          <span class="stag hl">JavaScript</span>
+          <span class="stag">Leaflet.js</span>
+          <span class="stag">PostgreSQL</span>
+          <span class="stag">Apache Doris</span>
+          <span class="stag">APIs REST</span>
+          <span class="stag">Python (básico)</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LÍNGUAS -->
+    <div class="sec-eyebrow" style="margin-bottom:.5rem">Línguas</div>
+    <div class="lang-row fade-in">
+      <div class="lang-card">
+        <div class="lang-name">Português</div>
+        <div class="lang-level">Nativo · Escrita, fala e compreensão excelentes</div>
+        <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div></div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-name">Inglês</div>
+        <div class="lang-level">Intermédio · Leitura/escrita boas; oral razoável</div>
+        <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld on"></div><div class="ld"></div><div class="ld"></div></div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-name">Chuabo</div>
+        <div class="lang-level">Comunicação oral razoável</div>
+        <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div></div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-name">Sena</div>
+        <div class="lang-level">Comunicação oral razoável</div>
+        <div class="lang-dots"><div class="ld on"></div><div class="ld on"></div><div class="ld"></div><div class="ld"></div><div class="ld"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCAÇÃO -->
+<section class="section alt" id="educacao">
+  <div class="inner">
+    <div class="sec-eyebrow">Formação</div>
+    <div class="sec-title">Educação & Cursos</div>
+    <div class="edu-list fade-in">
+
+      <div class="edu-item">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-year">2018 – 2022</div>
+          <div class="edu-degree">Licenciatura em Estatística</div>
+          <div class="edu-inst">Universidade Eduardo Mondlane (UEM) · Maputo, Moçambique</div>
+          <div class="edu-detail">Especialização em Bioestatística, Análise Multivariada, Séries Temporais, Amostragem, Análise de Experimentos e Sistemas de Informação em Saúde. Base sólida em estatística aplicada à saúde pública e ao desenvolvimento.</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">🗄️</div>
+        <div>
+          <div class="edu-year">2024</div>
+          <div class="edu-degree">MySQL Completo — DBA & Data Analysis</div>
+          <div class="edu-inst">Formação Profissional · SQL, Tableau, Power BI & Excel</div>
+          <div class="edu-detail">Curso intensivo de 123 horas cobrindo administração de bases de dados MySQL, análise de dados com SQL avançado, criação de dashboards em Tableau e Power BI, e modelação em Excel para análise de negócio.</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">🖥️</div>
+        <div>
+          <div class="edu-year">2016</div>
+          <div class="edu-degree">Licenciatura em Engenharia Informática (não concluída)</div>
+          <div class="edu-inst">Universidade Lúrio</div>
+          <div class="edu-detail">Formação inicial em programação e fundamentos de engenharia informática, que complementa a sua perspectiva técnica no desenvolvimento de sistemas de informação em saúde.</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">💻</div>
+        <div>
+          <div class="edu-year">2015</div>
+          <div class="edu-degree">Curso Básico de Informática</div>
+          <div class="edu-inst">Formação Técnica</div>
+          <div class="edu-detail">Fundamentos de computação, sistemas operativos e ferramentas de produtividade. Base para o desenvolvimento das competências técnicas actuais.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Élio Hermínio Confiança</div>
+  <div class="footer-sub" style="margin-top:6px">Analista de Dados · MISAU · Maputo, Moçambique · 2026</div>
+  <div class="footer-sub" style="margin-top:4px">elioherminioaraujof@gmail.com · github.com/ElioAraujo</div>
+</footer>
+
+<script>
+/* Fade in on scroll */
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, {threshold: 0.12});
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+/* Active nav on scroll */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      navLinks.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+      if(a) a.classList.add('active');
+    }
+  });
+}, {threshold: 0.35});
+sections.forEach(s => navObs.observe(s));
+</script>
+</body>
+</html>
